@@ -1,0 +1,137 @@
+/* Réinitialisation du css sur certaines propriétés */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    font-size: 20px;
+}
+
+/********************************************************************
+*                            CSS de la navBar                      *
+*******************************************************************/
+header{
+    padding: 10px 30px ;
+}
+img{
+    height: 60px;
+    margin-right: 100px;
+}
+a{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+/**************************************************************************
+*   CSS de la page index.php (page de connexion) + create_account.php     *
+**************************************************************************/
+.container{
+    border: 1px solid black;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    height: 80px;
+}
+.btn-primary{
+    background-color: rgb(47, 255, 57);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+    margin: 0 auto;
+}
+p.text-error{
+    color: rgb(200,69, 26);
+}
+
+/**************************************************************************
+*                   CSS de la page connected.php                          *
+**************************************************************************/
+/* NavBar spécifique à la todoList */
+.todoList_navBar{
+    margin-top: 20px;
+    min-height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+.todoList_block_title{
+    margin-bottom: 10px;
+}
+
+/* un article est une carte cliquable */
+.card{
+    border: 2px solid red;
+    background-color: aqua;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+}
+.card:hover{
+    opacity: 30%;
+}
+.article{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.info{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/**************************************************************************
+*           CSS des pages connected.php + read_article                    *
+**************************************************************************/
+.container{
+    display: block;
+    border: 1px solid rebeccapurple;
+    width: 60%;
+    min-height: 350px;
+    margin-top: 20px;
+}
+.todolist_content{
+    overflow: hidden;
+    margin: 30px auto;
+    padding: 0 10px;
+    min-height: 200px;
+}
+.todolist_footer{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 30px;
+}
+.todolist_footer_content{
+    margin: 0 auto;
+}
+.button_zone{
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+.btn-warning{
+    width: auto;
+    background-color: rgb(255, 64, 0);
+    margin: 10px auto;
+}
+
+
